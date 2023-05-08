@@ -1,0 +1,73 @@
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.principal{
+    background: #212529;
+}
+
+.cont1, .cont2{
+    width: 550px;
+}
+
+.subContent {
+    width: 250px;
+}
+
+h4, h1{
+    color: #8B3DFF;
+}
+
+#ss{
+    border-left: 1px solid #8B3DFF;
+}
+
+.cv{
+    width: 100%;
+    height: 100vh;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+
+@media screen and (max-width:575px) {
+    .cont1 p{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .cont1 h1, .cont1 p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:548px) {
+    .cont2Title{
+        text-align: center;
+    }
+    .info{
+        display: flex;
+        justify-content: center!important;
+    }
+
+    #ss{
+        border-left: none;
+    }
+
+    
+    .subContent h4, .subContent p{
+        text-align: center;
+    }
+
+    .subContent {
+        padding-left: 0px!important;
+    }
+
+    .cont1, .cont2{
+        width: auto;
+    }
+
+}
+
+
+
+

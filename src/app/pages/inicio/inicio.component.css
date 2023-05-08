@@ -1,0 +1,155 @@
+
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+h1{
+    color: #8B3DFF;
+}
+
+.cont2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* a{
+    padding: 5px;
+}
+
+a:hover{
+    box-shadow: 0px 0px 5px 1px #8B3DFF !important;
+
+} */
+.principal {
+    background:  url(../../../assets/img/carlos_fondo.png);
+    /* background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(../../../assets/img/wallpaper.jpg); */
+    background-size: cover;
+    /* width: 100vw; */
+    height: 100vh;
+    
+}
+
+ img{
+    width: 200px;
+    height: 200px;
+
+}
+
+.ic{
+    padding: 8px;
+}
+
+
+figure  {
+   
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    border-style: solid;
+    /* border-width: 10px;
+    border-color: white; */
+}
+/* figure:hover > img {
+    transform: scale(1.1);
+}
+figure img{
+    width: 100%;
+    transition: all .5s ease;
+    
+} */
+
+.principal-contenido  {
+    width: 500px;
+    overflow: hidden;
+}
+.principal-contenido:hover  {
+    transform: scale(1.1);
+}
+.principal-contenido {
+    transition: all .5s ease;
+}
+  
+.fb:hover {
+    
+    border-radius: 50% ;
+    box-shadow: 0px 0px 5px 1px blue !important;
+  
+}
+.wp:hover {
+   
+    border-radius: 50% ;
+    box-shadow: 0px 0px 5px 1px rgb(182, 235, 103) !important;
+}
+
+.in:hover {
+   
+    border-radius: 50% ;
+    box-shadow: 0px 0px 5px 1px #FF4E23 !important;
+}
+.lk:hover {
+   
+    border-radius: 50% ;
+    box-shadow: 0px 0px 5px 1px #0A63BC !important;
+}
+.gt:hover {
+   
+    border-radius: 50% ;
+    box-shadow: 0px 0px 5px 0.8px black !important;
+}
+
+@media screen and (max-width:950px) {
+    .principal {
+     
+        height: auto;
+        
+    }  
+}
+@media screen and (max-width:651px) {
+    .contContact {
+     flex-direction: row !important;
+     margin-right: auto;
+     margin-left: auto;
+        
+    }  
+}
+
+@media screen and (max-width:576px) {
+    img{
+        width: 300px;
+        height: 300px;
+    
+    }
+    figure  {
+   
+        width: 300px;
+        height: 300px;
+    }
+
+    .principal-contenido{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+}
+
+@media screen and (max-width:501px) {
+    .principal-contenido{
+        width: auto;
+        margin: 0!important;
+    }
+    
+}
+
+@media screen and (max-width:333px) {
+    img{
+        width: 270px;
+        height: 270px;
+    
+    }
+    figure  {
+   
+        width: 270px;
+        height: 270px;
+    }
+}
+

@@ -1,0 +1,33 @@
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* .principal{
+    background: #212529;
+} */
+
+h1, h3{
+    color: #8B3DFF;
+}
+
+.tecnologia:hover {
+    box-shadow: 0px 0px 5px 1px #8B3DFF !important;
+    transition: all .5s ease;
+    animation:  tecno 2s linear infinite;
+}
+
+.tecnologia {
+    width: 260px;
+    padding: 20px;
+    background: #252A2E;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0px auto;
+}
+

@@ -1,0 +1,75 @@
+<!-- bg-dark" data-bs-theme="dark" -->
+<nav class="navbar navbar-expand-lg bg-dark sticky-top pb-2">
+    
+    <div class="container-fluid ">
+
+        <img src="../../../assets/img/logo_car.png" alt="Logo" width="80" height="35" class="align-text-top">
+
+        <button class="navbar-toggler bg-white animate__animated animate__rubberBand" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+       
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <!-- <div class="offcanvas offcanvas-end"  id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> -->
+            
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title opcionMenu fw-bold " id="offcanvasNavbarLabel">MENU</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent"> -->
+            <div class="offcanvas-body bg-dark"  id="navbarSupportedContent" >
+                <ul class="navbar-nav ms-4 ">
+                    <li class="nav-item ms-2 liOpcion">
+                        <a 
+                        
+                        [routerLink] [fragment]="'inicio'"
+                        [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact: true}"
+                        class="nav-link active nav-style text-white text-center  fw-bold opcion"  
+                        (click)="navegaropcion1()"
+                        data-bs-dismiss="offcanvas" 
+                        >Inicio</a>
+                    </li>
+                    <li class="nav-item ms-2 liOpcion">
+                        <a 
+                      
+                        [routerLink] [fragment]="'informacion'" (click)="navegaropcion2()"
+                        [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact: true}"
+                        class="nav-link  active text-white text-center  fw-bold opcion" 
+                        data-bs-dismiss="offcanvas" 
+                        >Información</a>
+                    </li>
+                    <li class="nav-item ms-2 liOpcion">
+                        <a 
+                
+                        [routerLink] [fragment]="'portafolio'"
+                        [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact: true}"
+                        class="nav-link active text-white text-center  fw-bold opcion" 
+                        (click)="navegaropcion3()"
+                        data-bs-dismiss="offcanvas" 
+                        >Portafolio</a>
+                    </li>
+                    <li class="nav-item ms-2 liOpcion">
+                        <a 
+                        [routerLink] [fragment]="'contacto'"
+                        [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact: true}"
+                        class="nav-link  active text-white text-center  fw-bold opcion"  
+                        (click)="navegaropcion4()" 
+                        data-bs-dismiss="offcanvas" 
+                        >Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+
+ 

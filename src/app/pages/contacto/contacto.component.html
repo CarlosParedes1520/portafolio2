@@ -1,0 +1,80 @@
+<h1 class=" text-center fw-bold fs-1 mb-5">CONTACTO</h1>
+
+<div class="d-flex flex-wrap justify-content-evenly align-items-center">
+  
+  <div >
+    <p class="text-white"><i class="fa-regular fa-envelope icon me-2"></i>carlosparedesg1520@gmail.com</p>
+    <p class="text-white"><i class="fa-sharp fa-solid fa-phone me-2"></i>(+593) 0980565694</p>
+    <div class="contContact d-flex flex-wrap justify-content-center mt-3" 
+          data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100004841857179" class="me-3">
+        <i class="fa-brands fa-facebook text-white fa-3x"></i>
+      </a>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=593980565694" class="me-3">
+        <i class="fa-brands fa-whatsapp text-white fa-3x"></i>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/carlos_paredes_1520/" class="me-3">
+        <i class="fa-brands fa-instagram text-white fa-3x"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/carlos-paredes-768092236/" class="me-3">
+        <i class="fa-brands fa-linkedin-in text-white fa-3x"></i>
+      </a>
+      <a target="_blank"  href="https://github.com/CarlosParedes1520" class="me-3">
+        <i class="fa-brands fa-github text-white fa-3x"></i>
+      </a>
+     
+    </div>
+  </div>
+
+  <form class="border  ms-5 me-5 mt-5 mb-5 formulario"autocomplete="off" [formGroup]="miFormulario" (ngSubmit)="guardar()" 
+        data-aos="fade-up" data-aos-duration="1500">
+    <legend class=" ms-2 mb-3 mt-2 mb-2 fw-bold text-white tex me-2 ms-2 mb-4">Formulario de contacto<i class="fa-solid fa-table-list me-2 ms-2"></i></legend>
+      <div class="mb-3 row mt-5 ms-5 me-5 w-100 campo">
+          <label for="inputName" class="col-sm-2 col-form-label  me-2 fw-bold text-white" >Nombre:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control " id="inputName " placeholder="Ingrese nombre..." formControlName="nombre">
+            <span class="form-text text-danger" *ngIf="campoNoValido('nombre')">
+              Este campo es obligatorio
+            </span>
+          </div>
+          
+      </div>
+  
+      <div class="mb-3 row mt-5 ms-5 me-5 w-100 campo">
+          <label for="inputName" class="col-sm-2 col-form-label  me-2 fw-bold text-white">Correo:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputName"  placeholder="Ingrese Correo..." formControlName="correo">
+            <span class="form-text text-danger " *ngIf="campoNoValido('correo')">
+              {{emailErrorMsg}}
+           </span>
+          </div>
+      </div>
+  
+      <div class="mb-3 row mt-5 ms-5 me-5 w-100 campo">
+          <label for="inputName" class="col-sm-2 col-form-label  me-2 fw-bold text-white">Asunto:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputName"  placeholder="Ingrese Asunto..." formControlName="asunto">
+            <span class="form-text text-danger" *ngIf="campoNoValido('asunto')">
+              Este campo es obligatorio
+          </span>
+          </div>
+      </div>
+  
+      <div class="mb-3 row mt-5 ms-5 me-5 w-100 campo">
+          <label for="inputName" class="col-sm-2 col-form-label  me-2 fw-bold text-white">Mensaje:</label>
+          <div class="col-sm-8">
+            
+            <textarea class="form-control" id="Textarea1" rows="3" formControlName="mensaje"></textarea>
+            <span class="form-text text-danger" *ngIf="campoNoValido('mensaje')">
+              Este campo es obligatorio
+          </span>
+          </div>
+      </div>
+  
+  
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end me-4 ms-4 mb-3">
+          <button class="btn btn-secondary btn-lg" type="submit">Enviar</button>
+         
+        </div>
+  </form>
+</div>
